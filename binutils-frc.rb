@@ -18,7 +18,7 @@ class BinutilsFrc < Formula
       "--disable-nls",
       "--enable-lto",
       "--disable-werror",
-      "--enable-poison-system-directories"
+      "--enable-poison-system-directories",
     ]
 
     system "./configure", *args
