@@ -46,6 +46,10 @@ class GccFrc < Formula
       "--with-build-sysroot=#{HOMEBREW_PREFIX}/#{target}",
     ]
 
+    # Symlink with binutils so that GCC can find
+    # the right assembler and linker
+    ln_s "#{Formula["binutils-frc"].opt_prefix}/#{target}", "#{prefix}/#{target}"
+
     mkdir 'build' do
       system "../configure", *args
 
