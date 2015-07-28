@@ -1,6 +1,6 @@
 require 'formula'
 
-class BinutilsFrc < Formula
+class ArmFrcLinuxGnueabiBinutils < Formula
   homepage 'http://www.gnu.org/software/binutils/binutils.html'
   url 'http://ftpmirror.gnu.org/binutils/binutils-2.24.tar.gz'
   mirror 'http://ftp.gnu.org/gnu/binutils/binutils-2.24.tar.gz'
@@ -16,9 +16,11 @@ class BinutilsFrc < Formula
       "--mandir=#{man}",
       "--with-sysroot=#{HOMEBREW_PREFIX}/#{target}",
       "--enable-plugins",
+      "--disable-multilib",
       "--disable-nls",
       "--enable-lto",
       "--disable-werror",
+      "--disable-libiberty-install",
       "--enable-poison-system-directories",
     ]
 
@@ -27,5 +29,4 @@ class BinutilsFrc < Formula
     system "make"
     system "make", "install"
   end
-
 end

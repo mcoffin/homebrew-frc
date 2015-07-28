@@ -11,7 +11,7 @@ class GccFrc < Formula
   depends_on "mpfr"
   depends_on "cloog"
 
-  depends_on "binutils-frc"
+  depends_on "binutils-arm-frc-linux-gnueabi"
 
   def install
 

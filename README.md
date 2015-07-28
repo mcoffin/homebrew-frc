@@ -10,5 +10,5 @@ If you need help setting up a sysroot for the roboRIO, you can use the awesome t
 
 ````bash
 brew tap mcoffin/homebrew-frc
-brew install gcc-frc
+brew install arm-frc-linux-gnueabi-gcc
 ````
