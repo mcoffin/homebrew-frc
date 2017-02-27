@@ -2,9 +2,9 @@ require 'formula'
 
 class ArmFrcLinuxGnueabiBinutils < Formula
   homepage 'http://www.gnu.org/software/binutils/binutils.html'
-  url 'http://ftpmirror.gnu.org/binutils/binutils-2.24.tar.gz'
-  mirror 'http://ftp.gnu.org/gnu/binutils/binutils-2.24.tar.gz'
-  sha1 '1b2bc33003f4997d38fadaa276c1f0321329ec56'
+  url 'http://ftpmirror.gnu.org/binutils/binutils-2.27.tar.gz'
+  mirror 'http://ftp.gnu.org/gnu/binutils/binutils-2.27.tar.gz'
+  sha256 '26253bf0f360ceeba1d9ab6965c57c6a48a01a8343382130d1ed47c468a3094f'
 
   def install
     target = 'arm-frc-linux-gnueabi'
